@@ -5,23 +5,58 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>    <!--<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">-->
     <link rel="shortcut icon" href="img/rotary_logo.gif">
     <link href="bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    <script src="viewport-units-buggyfill-master/viewport-units-buggyfill.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Rancho" rel="stylesheet" type="text/css">
+    <link href="css/style1.css" rel="stylesheet">
+    <link href="css/style_common.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
     <title>RYLA 5280 - Rotary Youth Leadership Assembly</title>
 
-
     <style>
-        h1 {
 
+    @font-face{
+        font-family: "Klinic";
+        src: url('fonts/KlinicSlabLight.otf'),
+        url('fonts/KlinicSlabLight.otf'); /* IE */
+    }
+    @font-face{
+        font-family: "Klinic Bold";
+        src: url('fonts/KlinicSlabBold.otf'),
+        url('fonts/KlinicSlabBold.otf'); /* IE */
+    }
+    @font-face{
+        font-family: "Lobster";
+        src: url('fonts/Lobster_1.3.otf'),
+        url('fonts/Lobster_1.3.otf'); /* IE */
+    }
+
+        h1 {
             font-size: 50px;
-            text-shadow: 1px 1px grey;
+            text-shadow: 1px 1px black;
+        }
+        h4 {
+            color: white;
+        }
+        h5{
+            font-family: 'Lobster';
+            color: #2980b9;
+            font-size: 40px;
+
+
 
         }
 
         body {
             font-family: 'Roboto Slab', serif;
+            /*//overflow: scroll;*/
         }
 
         p{
-            font-size: 20px;;
+            font-size: 20px;
+            /*font-family: 'Klinic';*/
+
         }
 
         #ryla_logo {
@@ -29,10 +64,37 @@
         }
 
         #rotary_logo {
-            height: 200px;
-            /*padding: 50px;*/
+            height: 175px;
+            padding: 10px;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 50px;
+
+
+        }
+        .highlight1 {
+            color: #1CFF17;
+            opacity: 1;
+        }
+        .highlight2 {
+            color: #FF6D00;
+        }
+        .highlight3 {
+            color: #3314CC;
+        }
+        .highlight4 {
+            color: #FF2004;
+        }
+
+
+
+        #interact_logo {
+            height: 175px;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+
         }
         .top_logos {
             height: 150px;
@@ -49,13 +111,28 @@
             padding: 10px;
 
         }
+        #top_bar h4 {
+            margin-bottom: 0;
+        }
         #navbar {
-            margin-top: 15px;
+            /*margin-top: 400px;*/
             padding: 0;
-            vertical-align: middle;
+            color: white;
+            font-size: 20px;
+            text-shadow: 0px 2px 3px black;
 
         }
+        #navbar li {
+            padding: 25px 5px 0px 5px;
 
+        }
+        #navbar ul{
+            display: inline;
+        }
+
+        #top_headers {
+
+        }
 
         #ryla_group {
             /*size: 200%;*/
@@ -63,23 +140,89 @@
             /*border-width: 50px;*/
             padding: 25px;
             height: 350px;
+            margin-left: auto;
+            margin-right: auto;
 
+        }
+        #councilors_picture {
+            padding: 25px;
+            height: 350px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        #snowman {
+            padding: 25px;
+            height: 350px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #alpine_map {
+            padding-top: 25px;
+            /*height: 350px;*/
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #ryla_application_thumbnail {
+            padding: 25px;
+            height: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #form_address {
+            color: black;
+            text-shadow: none !important;
+            text-align: center;
+            width: 205px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+        }
+        #download_application {
+            width: 250px;
+            font-size: 50px;;
+        }
+
+        #download_icon {
+            color: white;
+            text-shadow: none !important;
+            text-align: center;
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 100px;
+
+        }
+        #application_container{
+            width: 100%;
+        }
+        #application_table{
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        #form_address li{
+            list-style: none;
+        }
+        #form_address ul {
+            margin: 0;
+            padding: 0;
         }
         #section1 {
             height: 100vh;
-
+            /*height: 1000px;*/
             text-align: center;
-            background: url("img/hike_reflection_blur.jpg") no-repeat center center fixed;
+            /*background: url("img/hike_reflection_blur.jpg") no-repeat center;*/
             color: white;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
+            background: url("img/hike_reflection_blur.jpg") no-repeat center center;
+            background-position: top center;
+            background-repeat: no-repeat;
+            margin:0;
+            padding: 0;
             background-size: cover;
-
-
-            /*background-size: cover;*/
-            /*background-position: center;*/
-            text-shadow: 0px 2px 3px black;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
         }
 
         #section2 {
@@ -89,13 +232,52 @@
             text-shadow: 0px 2px 3px black;
         }
         #section3 {
-            background-color: #585858;
+            /*background-color: #585858;*/
+
+            background-image: url("img/congruent_outline.png");
             padding: 25PX;
             color: #f5f5f5;
-            /*color: #222;*/
             text-shadow: 0px 2px 3px black;
 
         }
+
+        #section4 {
+            color: #f5f5f5;
+            text-shadow: 0px 2px 3px black;
+
+            background-color: #344996 ;
+        }
+
+        #section5 {
+            /*display: none;*/
+            color: #f5f5f5;
+            text-shadow: 0px 2px 3px black;
+            background-image: url("img/diagmonds.png");
+            /*background-image: url("img/congruent_pentagon.png");*/
+        }
+
+        #section6 {
+            /*display: none;*/
+            color: #f5f5f5;
+            text-shadow: 0px 2px 3px black;
+            background-color: #97282C;
+
+        }
+        #footer {
+            /*background-image: url("img/hixs_pattern_evolution.png");*/
+            background-color: #444444;
+            /*color: #999; text-shadow: 0px 3px 8px #2a2a2a;*/
+            text-align: center;
+            color: #222;
+            text-shadow: 0px 2px 3px #555;
+            font-family: 'Klinic';
+
+        }
+        #footer h4 {
+
+
+        }
+
         #fade1{
             display: none;
         }
@@ -104,51 +286,223 @@
         }
         #fade3 {
             display: none;
-            font-family: cursive;
         }
         #fade4 {
             display: none;
+            font-family: cursive;
+        }
+        #fade5 {
+            display: none;
         }
 
-        ul.nav a {
-            color: white;
-            font-size: 15px;
-            text-shadow: 0px 2px 3px black;
-        }
-
-        ul.nav a:hover {
-            background-color: green;
-        }
-
-        .nav-pills > li.active > a, .nav-pills > li.active {
+        a {
             color: white;
         }
 
-        .nav-pills > li.active > a, .nav-pills > li.active > a:hover {
-            background-color: green;
+        a:hover
+        {
+            text-decoration:none;
+            color: white;
         }
 
-        @media (max-width: 850px) {
+        #R:hover~#Rotary {
+            color: brown;
+
+        }
+
+        .hidden{
+            opacity:0;
+        }
+        .visible{
+            opacity:1;
+        }
+         /*ul.nav a:hover {*/
+            /*background-color: green;*/
+        /*}*/
+
+        /*.nav-pills > li.active > a, .nav-pills > li.active {*/
+            /*background: none !important;*/
+
+        /*}*/
+
+        /*.nav-pills > li.active > a, .nav-pills > li.active > a:hover {*/
+            /*background-color: rgba(255, 255, 255, 0.4);*/
+
+        /*}*/
+
+        @media (max-width: 700px) {
             h1{
-                font-size: 20px;
+                font-size: 40px;
             }
             ul.nav a {
                 font-size: 15px;;
             }
+            #navbar {
+                /*margin-top: 10px;*/
+                /*padding-top: 0;*/
+            }
+            #ryla_group {
+                height: 250px;
+            }
+            #councilors_picture {
+                height: 250px;
+            }
+        }
+        @media (max-width: 1000px) {
+
+            #alpine_map{
+                display: none;
+            }
+
+    }
+
+        @media (min-width: 700px) {
+
+        /* Smartphones (portrait) ----------- */
+        /*@media only screen*/
+        /*and (max-width : 320px) {*/
+
         }
 
-        .center-pills {
-            display: inline-block;
+        /* Smartphones (portrait and landscape) ----------- */
+        @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 480px) {
+            #section1 {
+                height: 800px;
+
+            }
+            #navbar {
+                margin-top: 10px;
+            }
+
         }
 
-        #footer {
-            background-color: #474747;
-            /*color: #999; text-shadow: 0px 3px 8px #2a2a2a;*/
-
-            color: #222;
-            text-shadow: 0px 2px 3px #555;
-
+            /* Smartphones (landscape) ----------- */
+        @media only screen
+        and (min-width : 321px) {
+            #section1 {
+                height: 800px;
+            }
+            #navbar {
+                margin-top: 10px;
+            }
         }
+
+            /* iPads (landscape) ----------- */
+        @media only screen
+        and (min-device-width : 768px)
+        and (max-device-width : 1024px)
+        and (orientation : landscape) {
+            #extra_space1 {
+                display: none;
+            }
+            #extra_space2 {
+                display: none;
+            }
+        }
+
+    /*<!--iphone-->*/
+    /*@media only screen*/
+    /*and (min-device-width : 320px)*/
+    /*and (max-device-width : 480px)*/
+    /*and (orientation : landscape) {*/
+            /*#extra_space1 {*/
+                /*display: none;*/
+            /*}*/
+            /*#extra_space2 {*/
+                /*display: none;*/
+            /*}*/
+            /*h1{*/
+                /*line-height: 10%;*/
+            /*}*/
+            /*h2{*/
+                /*line-height: 10%;*/
+            /*}*/
+      /*}*/
+
+    /*iphone landscape*/
+    @media only screen and (min-device-width: 320px)  and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (orientation:landscape)
+    {
+        #extra_space1 {
+            display: none;
+        }
+        #extra_space2 {
+            display: none;
+        }
+        h1{
+            line-height: 10%;
+            font-size: 32px;
+        }
+        h2{
+            line-height: 20%;
+            font-size: 16px;
+        }
+
+    }
+
+        /* iPhone 4 ----------- */
+    /*@media*/
+    /*only screen and (-webkit-min-device-pixel-ratio : 1.5),*/
+    /*only screen and (min-device-pixel-ratio : 1.5) {*/
+       /*h1 {*/
+           /*line-height: 10%;*/
+       /*}*/
+        /*#section1 h2 {*/
+            /*line-height: 10%;*/
+        /*}*/
+
+
+        /*#extra_space1 {*/
+            /*display: none;*/
+        /*}*/
+        /*#extra_space2 {*/
+            /*display: none;*/
+        /*}*/
+        /* Styles */
+    /*}*/
+            /* CSS */
+            /* Basic responsive */
+        /*@media screen and (max-width: 960px) {*/
+            /* ..custom CSS for viewports less than 960 here */
+            /*header { *//*...*//* }*/
+            /*section { *//*...*//* }*/
+            /*footer { *//*...*//* }*/
+            /* etc.. */
+        /*}*/
+
+            /* iPads (portrait) and similar tablets */
+        /*@media only screen*/
+        /*and (min-device-width : 768px) {*/
+            /*header { *//*...*//* }*/
+            /*section { *//*...*//* }*/
+            /*footer { *//*...*//* }*/
+            /* etc.. */
+        /*}*/
+
+            /* Smartphones */
+        /*@media only screen and (max-device-width : 480px) {*/
+            /*header { *//*...*//* }*/
+            /*section { *//*...*//* }*/
+            /*footer { *//*...*//* }*/
+            /* etc.. */
+        /*}*/
+
+
+            /*
+    This next definition doesn't allow the background to get any smaller
+    than a predefined size (640x426px in this case). Change the values
+    here to match your background image size. The configuration in the
+    flexi-background javascript file should also match these values.
+    */
+
+        /*@media only all and (max-width: 640px) and (max-height: 426px) {*/
+            /*#section1 {*/
+                /*background-size: 2048px 1357px;*/
+                /*-moz-background-size: 2048px 1357px;*/
+                /*-webkit-background-size: 2048px 1357px;*/
+            /*}*/
+        /*}*/
 
 
 
@@ -156,97 +510,80 @@
 </head>
 <body>
 
+<div id="hover_container">
+
 <div id="section1">
-    <div id="top_bar">
+    <div id="top_bar" class="animated fadeInDown">
         <div class="container" >
             <div class="row navcenter">
-                <div class="col-md-6">
+                <div class="col-xs-6">
                     <!--Main RYLA Logo-->
-                    <!--<a href="index.html"><img class="top_logos" class="img-responsive" id="ryla_logo" src="img/RYLA_logo.png"></a>-->
-                    <a href="index.html"><img class="top_logos" class="img-responsive" id="ryla_logo" src="img/RYLA_logo2.png"></a>
-                    <!--<a href="index.html"><img class="top_logos" class="img-responsive" id="ryla_logo" src="img/RYLA_logo3.png"></a>-->
+                    <a href="index.html"><img class="top_logos" class="img-responsive" id="ryla_logo" src="img/RYLA_logo2.png">
+                        <h4><span id="Rotary_hover">Rotary</span><span id="Youth_hover"> Youth</span>
+                            <span id="Leadership_hover"> Leadership </span><span id="Assembly_hover">Assembly</span></h4></a>
 
                 </div>
-                <!--<div class="col-md-3">-->
-                    <!--</div>-->
 
-                <div class="col-md-6">
+                <div class="col-xs-6">
                     <div class="span6 text-center">
-                    <ul class="nav nav-pills center-pills" id="navbar">
-                        <li class="active"><a href="#">About</a></li>
 
-                        <li><a href="#">Application</a></li>
-                        <li><a href="#">Location</a></li>
-
-                    </ul>
-
-
-                         </div>
-
+                        <!--<ul class="nav nav-pills center-pills" id="navbar">-->
+                        <ul id="navbar">
+                            <li class="float"><a href="#learn_more">About</a></li>
+                            <li class="float"><a href="#location">Location</a></li>
+                            <li class="float"><a href="#section5">Forms</a></li>
+                            <li class="float"><a href="#section6">Staff</a></li>
+                        </ul>
+                    </div>
                 </div>
-
             </div>
         </div>
-
     </div>
 
-    <!--<div class="container" >-->
-        <!--<div class="row">-->
-            <!--<div class="col-md-6">-->
+    <div id='top_headers'>
+        <h1 id="RYLA_hover" class="animated bounceIn"><span id="R">R</span><span id="Y">Y</span><span id="L">L</span><span id="A">A</span> | Rotary District 5280</h1>
+        <!--<h1></h1>-->
+    </div><hr width="50%">
 
-            <!--</div>-->
+    <div id="extra_space1"></br></div>
 
-
-            <!--<div class="col-md-6">-->
-                <!--&lt;!&ndash;News Column&ndash;&gt;-->
-            <!--</div>-->
-        <!--</div>-->
-
-
-<div id='top_headers'>
-    <h1>Rotary Youth Leadership Assembly</h1>
-    <h1>District 5280</h1>
-    <hr width="50%">
-
-    </br>
-
-    <h2 id="fade1">200 Students <span class="glyphicon glyphicon-ok"></span></h2>
-    <h2 id="fade2">2 ½ Days <span class="glyphicon glyphicon-ok"></span></h2>
+    <h2 id="fade1">200 Students </h2>
+    <h2 id="fade2">2 ½ Days</h2>
+    <h2 id="fade3">Training New Generations of Leaders</h2>
 
     <!--<hr width="5%">-->
     </br>
-    <h2 id="fade3"><strong>Life Changing </strong><span class="glyphicon glyphicon-ok"></span></h2>
+    <h2 id="fade4"><strong>Life Changing </strong><span class="glyphicon glyphicon-ok"></span></h2>
 
-    </br></br></br>
+    <div id="extra_space2"></br></br></div></br>
 
-    <a id="fade4" href="#learn_more"><button type="button" class="btn btn-primary btn-lg">Learn More</button></a>
-
-
-
-
+    <a id="fade5" href="#learn_more"><button type="button" class="btn btn-primary btn-lg">Learn More</button></a>
+</div>
 
 
 </div>
 
-</div>
 
 <div id='section2'>
     <div name="learn_more">
         <div class="container" >
             <div class="row">
 
-                <div  class="col-md-5">
-                    <img id="ryla_group" class=" img-responsive" src="img/ryla2014_group.jpg">
+                <div  class="col-md-5 wow bounceInLeft">
+                    <img id="ryla_group" class=" img-responsive" src="img/ryla_group_angela_chen.JPG">
                 </div>
+                <div class="wow fadeInUp">
+
                 <div class="col-md-7">
                     <h3>WHAT HAPPENS AT RYLA?</h3>
                     <hr>
                     <p>Each spring, between 180 and 200 high school students from the Greater Los Angeles area,
                         (Rotary International District 5280) meet for 2 ½ days to improve their skills as leaders in their communities.
                         Students participate in experiential learning activities, including active leadership workshops, team building activities,
-                        and a RYLA olympics and talent show. Set high in the San Bernardino Mountains, the camp is breath taking and
+                        and a RYLA Olympics and talent show. Set high in the San Bernardino Mountains, the camp is breathtaking and
                         completely private, giving the students a peaceful environment in which to learn more about themselves, and their peers.
                     </p>
+                </div>
                 </div>
             </div>
         </div>
@@ -258,17 +595,26 @@
         <div class="container" >
             <div class="row">
 
-                <div class="col-md-1"></div>
-                <div class="col-md-6">
+                <div class="col-md-3 wow bounceInUp">
+                    <img id="rotary_logo" class="img-responsive" src="img/rotary_logo.gif">
+
+                </div>
+                <div class="col-md-6 wow fadeInUp">
                     <h3>HOW DO I ATTEND RYLA?</h3>
                     <hr>
+                    <p>If you are a high school freshman, sophomore, or junior passionate about leadership, service, and Rotary, RYLA is for you!</p>
+
                     <p>Each Rotary Club is assigned a RYLA Liaison responsible for facilitating the signup process.
                         Contact your Interact Club Leadership, or Rotary Club to sign up to attend RYLA!
                     </p>
                 </div>
-                <div class="col-md-1"></div>
-                <div  class="col-md-4">
-                    <img id="rotary_logo" class="img-responsive" src="img/rotary_logo.gif">
+                <!--<div class="col-md-1"></div>-->
+                <div class="wow bounceInUp">
+
+                <div  class="col-md-3 ">
+                    <img id="interact_logo" class="img-responsive" src="img/interact%20logo.gif">
+
+                </div>
                 </div>
             </div>
         </div>
@@ -276,8 +622,182 @@
 </div>
 
 
+<div id='section4'>
+    <div name="location">
+        <div class="container" >
+            <div class="row">
+                <div  class="col-md-3">
+                    <img id="snowman" class="img-responsive wow bounceInLeft" src="img/snowman_Kithumini_Jayasiri.jpg">
+                </div>
+                <div class="wow fadeInUp">
+                <div class="col-md-6" >
+                    <h3>Location</h3>
+                    <hr>
+                    <p >District 5280's RYLA is located at the Alpine Camp and Conference Center in the
+                        San Bernardino Mountains. Immersed in nature, this camp provides the perfect location for
+                        self reflection and an incredible learning experience. RYLA takes place in April,
+                        but it does get cold at night. Pack for rain and shine!
+                    </p>
+                </div>
+                </div>
+                <div  class="col-md-3" id="alpine_map">
+                    <div class=" wow bounceInRight" style="width: 100%; overflow: hidden; height: 300px;">
+                        <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3298.1296590599254!2d-117.226264!3d34.245235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e045635c521a23c!2sAlpine+Camp+%26+Conference+Center!5e0!3m2!1sen!2sus!4v1404186915477"
+                                width="100%"
+                                height="600"
+                                frameborder="0"
+                                style="border:0; margin-top: -150px;">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id='section5'>
+    <div name="location">
+        <div class="container" >
+            <div class="row">
+
+
+                <div class="col-md-7 wow fadeInUp">
+                        <h3>Application</h3>
+                    <hr>
+                    <p>Please give your completed registration forms to your Rotary sponsor or RYLA contact.
+                        All applications are to be returned by March 15, 2014. They should return the forms to:
+                    <!--<div class="panel panel-primary">-->
+                        <!--<h3 class="panel-title">Panel title</h3>-->
+                    <!--<div class="panel-body">-->
+                        <!--Panel content-->
+                    <!--</div>-->
+
+                    <!--</div>-->
+                    <div id=application_container>
+                    <table id="application_table" class="wow bounceInUp">
+                        <tr>
+                            <td>
+                                <div class="panel panel-primary" id="form_address">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"><span class="glyphicon glyphicon-envelope"></span></h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>Rotary District 5280</li>
+                                            <li>RYLA</li>
+                                            <li>C/O Elyse Beardsley,</li>
+                                            <li>2618 Vargas Way</li>
+                                            <li>Redondo Beach, CA 90278</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="2014_RYLA_Application-full.docx" target="_blank">
+                                    <span class="glyphicon glyphicon-download-alt pulse-shrink wow bounceInUp" id="download_icon"></span>
+                                </a>
+                            </td>
+                        </tr>
+
+                    </table>
+                    </div>
+
+
+                </div>
+                <div class=" wow bounceInUp">
+                <div  class="col-md-5">
+                    <a href="2014_RYLA_Application-full.docx" target="_blank">
+                        <img id="ryla_application_thumbnail" class=" img-responsive" src="img/ryla_application_thumbnail.png">
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div id='section6'>
+    <div name="location">
+        <div class="container" >
+            <div class="row">
+
+                <div  class="col-md-5">
+
+
+                    <img id="councilors_picture" class=" img-responsive wow bounceInLeft" src="img/councilors_Wallace_Liew.JPG">
+                </div>
+                <div class="wow fadeInUp">
+                <div class="col-md-7 ">
+                    <h3>Counselors</h3>
+                    <hr>
+                    <p>The RYLA counselors train year-long to create the magic that is the RYLA weekend.
+                        They are composed of previous RYLA attendees who wish to pass on lessons learned.
+                        You will never find a friendlier mix of Interact, Roteract, and Rotary. We promise an amazing weekend!
+
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id='footer'>
+
+    <!--<h4>Made with <span class="glyphicon glyphicon-heart"></span> in L.A. | Built By Isaac Siegel | COPYRIGHT © 2014 RYLA</h4>-->
+
+
+    <div class="container wow bounceIn">
+        <div class="row">
+            <div class="col-md-4">
+                <!--<h4>Made with <span class="glyphicon glyphicon-heart"></span> in L.A.</span></h4>-->
+                <h5>Site</h5>
+                <h4>COPYRIGHT © 2014 RYLA</h4>
+
+            </div>
+            <div class="col-md-4">
+                <h5>Design</h5>
+                <h4>Isaac Siegel</h4>
+
+            </div>
+
+            <div  class="col-md-4">
+                <h5>Photography</h5>
+                <h4>Angela Chen</h4>
+                <h4>Kithumini Jayasiri</h4>
+                <h4>Wallace Liew</h4>
+
+        </div>
+    </div>
+
+
+    </div>
+
+</div>
+
+
+
+
         <!-- SMOOTH SCROLL -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="viewportchecker.js"></script>
+
+
+        <script type="text/javascript">
+            jQuery(document).ready(function() {
+                jQuery('.post').addClass("hidden").viewportChecker({
+                    classToAdd: 'visible animated fadeIn',
+                    offset: 100
+                });
+            });
+        </script>
+
+
         <script>
             $(function() {
                 $('a[href*=#]:not([href=#])').click(function() {
@@ -295,49 +815,229 @@
             });
         </script>
 
-        <script type="text/javascript">
-            $(window).on("load", function() {
-                $('#fade1').fadeIn(1000, function() {
-                    // First Animation complete
 
-                $('#fade2').fadeIn(1000, function() {
-                    // Second Animation complete
+        <!-- End of SMOOTH SCROLL -->
+<script type="text/javascript">
+    $(window).on("load", function() {
+        $('#fade1').fadeIn(1000, function() {
+            // First Animation complete
+
+            $('#fade2').fadeIn(1000, function() {
+                // Second Animation complete
 
                 $('#fade3').fadeIn(1000, function() {
                     // Third Animation complete
-                $('#fade4').fadeIn(1000, function() {
-                    // button Animation complete
-                });  });   });  });
-            });
-        </script>
-        <!-- End of SMOOTH SCROLL -->
+                    $('#fade4').fadeIn(1000, function() {
+                        // Fourth Animation complete
+
+                        $('#fade5').fadeIn(1000, function() {
+                            // button Animation complete
+                        }); });  });   });  });
+    });
+</script>
+
+<!--Hover Highlight behavior for RYLA Acronym-->
+<script type="text/javascript">
+    $('#R').hover(
+        function(){ $("#Rotary_hover").addClass('highlight1')
+                    $("#R").addClass('highlight1')
+        },
+        function(){ $("#Rotary_hover").removeClass('highlight1')
+                    $("#R").removeClass('highlight1')
+        })
+    $('#Y').hover(
+        function(){ $("#Youth_hover").addClass('highlight2')
+                    $("#Y").addClass('highlight2')
+        },
+        function(){ $("#Youth_hover").removeClass('highlight2')
+                    $("#Y").removeClass('highlight2')
+        })
+    $('#L').hover(
+        function(){ $("#Leadership_hover").addClass('highlight3')
+                    $("#L").addClass('highlight3')
+        },
+        function(){ $("#Leadership_hover").removeClass('highlight3')
+                    $("#L").removeClass('highlight3')
+        })
+    $('#A').hover(
+        function(){ $("#Assembly_hover").addClass('highlight4')
+                    $("#A").addClass('highlight4')
+        },
+        function(){ $("#Assembly_hover").removeClass('highlight4')
+                    $("#A").removeClass('highlight4')
+        })
+</script>
+
+<!--On page load, color each, leave colored-->
+<!--<script>-->
+    <!--$(window).on("load", function() {-->
+
+        <!--setTimeout(function () {-->
+        <!--$("#Rotary_hover").addClass('highlight1')-->
+
+        <!--$("#R").addClass('highlight1')-->
+
+        <!--}, 0);-->
+<!--//        setTimeout(function () {-->
+<!--//        $("#Rotary_hover").removeClass('highlight1')-->
+<!--//        $("#R").removeClass('highlight1')-->
+<!--//        }, 250);-->
+
+        <!--setTimeout(function () {-->
+            <!--$("#Youth_hover").addClass('highlight2')-->
+            <!--$("#Y").addClass('highlight2')-->
+
+        <!--}, 500);-->
+
+<!--//        setTimeout(function () {-->
+<!--//            $("#Youth_hover").removeClass('highlight2')-->
+<!--//            $("#Y").removeClass('highlight2')-->
+<!--//-->
+<!--//        }, 750);-->
+
+        <!--setTimeout(function () {-->
+            <!--$("#Leadership_hover").addClass('highlight3')-->
+            <!--$("#L").addClass('highlight3')-->
+
+        <!--}, 1000);-->
+
+<!--//        setTimeout(function () {-->
+<!--//            $("#Leadership_hover").removeClass('highlight3')-->
+<!--//            $("#L").removeClass('highlight3')-->
+<!--//-->
+<!--//        }, 1250);-->
+
+        <!--setTimeout(function () {-->
+            <!--$("#Assembly_hover").addClass('highlight4')-->
+            <!--$("#A").addClass('highlight4')-->
+
+        <!--}, 1500);-->
+
+<!--//        setTimeout(function () {-->
+<!--//            $("#Assembly_hover").removeClass('highlight4')-->
+<!--//            $("#A").removeClass('highlight4')-->
+<!--//        }, 1750);-->
+    <!--});-->
+<!--</script>-->
+
+<!--On page load, color and uncolor, next-->
+<!--<script>-->
+    <!--$(window).on("load", function() {-->
+
+        <!--setTimeout(function () {-->
+            <!--$("#Rotary_hover").addClass('highlight1')-->
+
+            <!--$("#R").addClass('highlight1')-->
+
+        <!--}, 0);-->
+        <!--setTimeout(function () {-->
+        <!--$("#Rotary_hover").removeClass('highlight1')-->
+        <!--$("#R").removeClass('highlight1')-->
+        <!--}, 250);-->
+
+        <!--setTimeout(function () {-->
+            <!--$("#Youth_hover").addClass('highlight2')-->
+            <!--$("#Y").addClass('highlight2')-->
+
+        <!--}, 500);-->
+
+        <!--setTimeout(function () {-->
+            <!--$("#Youth_hover").removeClass('highlight2')-->
+            <!--$("#Y").removeClass('highlight2')-->
+
+        <!--}, 750);-->
+
+        <!--setTimeout(function () {-->
+            <!--$("#Leadership_hover").addClass('highlight3')-->
+            <!--$("#L").addClass('highlight3')-->
+
+        <!--}, 1000);-->
+
+        <!--setTimeout(function () {-->
+            <!--$("#Leadership_hover").removeClass('highlight3')-->
+            <!--$("#L").removeClass('highlight3')-->
+
+        <!--}, 1250);-->
+
+        <!--setTimeout(function () {-->
+            <!--$("#Assembly_hover").addClass('highlight4')-->
+            <!--$("#A").addClass('highlight4')-->
+
+        <!--}, 1500);-->
+
+        <!--setTimeout(function () {-->
+            <!--$("#Assembly_hover").removeClass('highlight4')-->
+            <!--$("#A").removeClass('highlight4')-->
+        <!--}, 1750);-->
 
 
 
-<!--<div id='footer'>-->
+    <!--});-->
+<!--</script>-->
 
-    <!--<h4>Made with <span class="glyphicon glyphicon-heart"></span> in L.A. | Built By Isaac Siegel | COPYRIGHT © 2014 RYLA</h4>-->
+<!--On page load, color each, next, uncolor each, next-->
+<script>
+    $(window).on("load", function() {
 
+        setTimeout(function () {
+            $("#Rotary_hover").addClass('highlight1')
 
-    <!--&lt;!&ndash;<div class="container" >&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+            $("#R").addClass('highlight1')
 
-                <!--&lt;!&ndash;<div class="col-md-4">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<h4>Made with <span class="glyphicon glyphicon-heart"></span> in L.A.</span></h4>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="col-md-4">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<h4>Built By Isaac Siegel<h4>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-                <!--&lt;!&ndash;<div  class="col-md-4">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<h4>COPYRIGHT © 2014 RYLA</h4>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        }, 0);
 
 
-        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        setTimeout(function () {
+            $("#Youth_hover").addClass('highlight2')
+            $("#Y").addClass('highlight2')
 
-<!--</div>-->
+        }, 250);
+
+
+
+        setTimeout(function () {
+            $("#Leadership_hover").addClass('highlight3')
+            $("#L").addClass('highlight3')
+
+        }, 500);
+
+
+
+        setTimeout(function () {
+            $("#Assembly_hover").addClass('highlight4')
+            $("#A").addClass('highlight4')
+
+        }, 750);
+
+
+
+        setTimeout(function () {
+            $("#Rotary_hover").removeClass('highlight1')
+            $("#R").removeClass('highlight1')
+        }, 1000);
+        setTimeout(function () {
+            $("#Youth_hover").removeClass('highlight2')
+            $("#Y").removeClass('highlight2')
+
+        }, 1250);
+        setTimeout(function () {
+            $("#Leadership_hover").removeClass('highlight3')
+            $("#L").removeClass('highlight3')
+
+        }, 1500);
+        setTimeout(function () {
+            $("#Assembly_hover").removeClass('highlight4')
+            $("#A").removeClass('highlight4')
+        }, 1750);
+    });
+</script>
+
+<script>window.viewportUnitsBuggyfill.init();</script>
+<script src="wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 
 </body>
+
 </html>
