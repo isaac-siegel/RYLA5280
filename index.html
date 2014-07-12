@@ -11,6 +11,8 @@
     <link href="css/style1.css" rel="stylesheet">
     <link href="css/style_common.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/flipclock.css">
+
 
     <title>RYLA 5280 - Rotary Youth Leadership Assembly</title>
 
@@ -263,17 +265,49 @@
             background-color: #97282C;
 
         }
+
+
+        #section7 {
+            /*display: none;*/
+            color: #f5f5f5;
+            text-shadow: 0px 2px 3px black;
+            /*background-color: #97282C;*/
+            /*background-color: #8e44ad;*/
+            background-image: url("img/escheresque_ste.png");
+
+
+        }
+        #date_table {
+            background-color: white;
+            text-shadow: none !important;
+            color: black;
+
+        }
+
+
+        #flipclock_container {
+            color: white;
+            text-shadow: none !important;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
         #footer {
-            /*background-image: url("img/hixs_pattern_evolution.png");*/
+            /*background-image: url("img/escheresque_ste.png");*/
             background-color: #444444;
             /*color: #999; text-shadow: 0px 3px 8px #2a2a2a;*/
             text-align: center;
             color: #222;
             text-shadow: 0px 2px 3px #555;
             font-family: 'Klinic';
+            border-top: 10px solid #8e44ad ;
+
 
         }
         #footer h4 {
+
 
 
         }
@@ -330,6 +364,7 @@
 
         /*}*/
 
+
         @media (max-width: 700px) {
             h1{
                 font-size: 40px;
@@ -347,6 +382,7 @@
             #councilors_picture {
                 height: 250px;
             }
+
         }
         @media (max-width: 1000px) {
 
@@ -354,7 +390,16 @@
                 display: none;
             }
 
-    }
+
+        }
+        @media (max-width: 1200px) {
+
+            #flipclock_container{
+                display: none;
+            }
+
+
+        }
 
         @media (min-width: 700px) {
 
@@ -438,6 +483,7 @@
             line-height: 20%;
             font-size: 16px;
         }
+
 
     }
 
@@ -638,6 +684,7 @@
                         self reflection and an incredible learning experience. RYLA takes place in April,
                         but it does get cold at night. Pack for rain and shine!
                     </p>
+
                 </div>
                 </div>
                 <div  class="col-md-3" id="alpine_map">
@@ -718,8 +765,6 @@
 </div>
 
 
-
-
 <div id='section6'>
     <div name="location">
         <div class="container" >
@@ -746,6 +791,63 @@
     </div>
 </div>
 
+<div id='section7'>
+    <div name="location">
+        <div class="container" >
+            <div class="row">
+
+                <div class="col-md-2"></div>
+                <div class="col-md-8 wow fadeInUp" >
+                    <h3>Important Dates</h3>
+                    <hr>
+
+
+                    <table class="table table-striped" id="date_table">
+                        <thead>
+                        <tr>
+                            <th>Event</th>
+                            <th>Date</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+
+
+                        <tr>
+                            <td>Attendee Count From Clubs</td>
+                            <td>December 20, 2013</td>
+                        </tr>
+                        <tr>
+                            <td>Payment Due</td>
+                            <td>March 2014</td>
+                        </tr>
+                        <tr>
+                            <td>RYLA Weekend</td>
+                            <td>April 25-27, 2014</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div id=flipclock_container wow fadeInUp>
+                        <h1>RYLA 2015</h1>
+                        <div class="clock" style="margin:2em;"></div>
+
+                    </div>
+
+
+
+                </div>
+                <div class="col-md-2"></div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
 
 <div id='footer'>
 
@@ -753,6 +855,7 @@
 
 
     <div class="container wow bounceIn">
+
         <div class="row">
             <div class="col-md-4">
                 <!--<h4>Made with <span class="glyphicon glyphicon-heart"></span> in L.A.</span></h4>-->
@@ -780,12 +883,42 @@
 
 </div>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="viewportchecker.js"></script>
+<script src="flipclock.js"></script>
+
+<script type="text/javascript">
+    var clock;
+
+    $(document).ready(function() {
+
+        // Grab the current date
+        var currentDate = new Date();
+
+        // Set some date in the future. In this case, it's always Jan 1
+        var futureDate  = new Date(2015, 3, 25);
+
+        // Calculate the difference in seconds between the future and current date
+        var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+        console.log(diff);
+
+        // Instantiate a coutdown FlipClock
+        if(diff > 0)
+        {
+        clock = $('.clock').FlipClock(diff, {
+            clockFace: 'DailyCounter',
+            countdown: true,
+            // showSeconds: false,
+        });
+        }
+    });
+</script>
+
 
 
 
         <!-- SMOOTH SCROLL -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="viewportchecker.js"></script>
+
 
 
         <script type="text/javascript">
