@@ -1,0 +1,95 @@
+/*Fonts*/
+
+@font-face{
+    font-family: "Roboto Slab";
+    src: url('../fonts/RobotoSlab-Regular.ttf'),
+    url('../fonts/RobotoSlab-Regular.ttf'); /* IE */
+}
+
+@font-face{
+    font-family: "Klinic";
+    src: url('../fonts/KlinicSlabLight.otf'),
+    url('../fonts/KlinicSlabLight.otf'); /* IE */
+}
+@font-face{
+    font-family: "Klinic Bold";
+    src: url('../fonts/KlinicSlabBold.otf'),
+    url('../fonts/KlinicSlabBold.otf'); /* IE */
+}
+@font-face{
+    font-family: "Lobster";
+    src: url('../fonts/Lobster_1.3.otf'),
+    url('../fonts/Lobster_1.3.otf'); /* IE */
+}
+@font-face{
+    font-family: "DistrictProThin";
+    src: url('../fonts/DistProTh.otf'),
+    url('../fonts/DistProTh.otf'); /* IE */
+}
+
+
+/*Sections*/
+
+#section1 {
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background: url("../img/hike_reflection_blur.jpg") no-repeat center center;
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin:0;
+    padding: 0;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+#section2 {
+    background-color: #118C4E;
+    /*padding: 5PX;*/
+    color: #f5f5f5;
+    text-shadow: 0px 2px 3px black;
+}
+#section3 {
+    /*background-color: #585858;*/
+
+    background-image: url("../img/congruent_outline.png");
+    padding: 25PX;
+    color: #f5f5f5;
+    text-shadow: 0px 2px 3px black;
+
+}
+
+#section4 {
+    color: #f5f5f5;
+    text-shadow: 0px 2px 3px black;
+
+    background-color: #344996 ;
+}
+
+#section5 {
+    /*display: none;*/
+    color: #f5f5f5;
+    text-shadow: 0px 2px 3px black;
+    background-image: url("../img/diagmonds.png");
+    /*background-image: url("img/congruent_pentagon.png");*/
+}
+
+#section6 {
+    /*display: none;*/
+    color: #f5f5f5;
+    text-shadow: 0px 2px 3px black;
+    background-color: #97282C;
+
+}
+
+#section7 {
+    /*display: none;*/
+    color: #f5f5f5;
+    text-shadow: 0px 2px 3px black;
+    /*background-color: #97282C;*/
+    /*background-color: #8e44ad;*/
+    background-image: url("../img/escheresque_ste.png");
+
+
+}
