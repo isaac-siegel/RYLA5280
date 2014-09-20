@@ -7,7 +7,7 @@
     <link href="css/hover.css" rel="stylesheet">
     <script src="viewport-units-buggyfill-master/viewport-units-buggyfill.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Rancho" rel="stylesheet" type="text/css">
-
+    <link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
 
     <link href="css/style1.css" rel="stylesheet">
     <link href="css/style_common.css" rel="stylesheet">
@@ -260,7 +260,8 @@
         /*}*/
         #fade4 {
             /*display: none;*/
-            font-family: cursive;
+            /* font-family: 'Damion', cursive;
+             font-weight: 200px;*/
         }
         /*#fade5 {*/
             /*display: none;*/
@@ -834,15 +835,15 @@
 
                         <tr>
                             <td>Attendee Count From Clubs</td>
-                            <td>December 20, 2013</td>
+                            <td>TBD</td>
                         </tr>
                         <tr>
                             <td>Payment Due</td>
-                            <td>March 2014</td>
+                            <td>TBD</td>
                         </tr>
                         <tr>
                             <td>RYLA Weekend</td>
-                            <td>April 25-27, 2014</td>
+                            <td>April 24-26, 2015</td>
                         </tr>
                         </tbody>
                     </table>
@@ -882,20 +883,23 @@
                 <h4>COPYRIGHT © 2014 RYLA</h4>
 
             </div>
+
+            <div  class="col-md-4">
+                <h5>Photography</h5>
+                <h4>Angela Chen</h4>
+                <h4>Kithumini Jayasiri</h4>
+                <h4>Lilia Usher</h4>
+                <h4>Wallace Liew</h4>
+
+            </div>
+
             <div class="col-md-4">
                 <h5>Design</h5>
                 <h4>Isaac Siegel</h4>
 
             </div>
 
-            <div  class="col-md-4">
-                <h5>Photography</h5>
-                <h4>Angela Chen</h4>
-                <h4>Kithumini Jayasiri</h4>
-				<h4>Lilia Usher</h4>
-                <h4>Wallace Liew</h4>
-
-        </div>
+            
     </div>
 
 
@@ -947,11 +951,11 @@
         var currentDate = new Date();
 
         // Set some date in the future. In this case, it's always Jan 1
-        var futureDate  = new Date(2015, 3, 25);
+        var futureDate  = new Date(2015, 3, 24);
 
         // Calculate the difference in seconds between the future and current date
         var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
-        console.log(diff);
+        //console.log(diff);
 
         // Instantiate a coutdown FlipClock
         if(diff > 0)
