@@ -51,9 +51,9 @@
     text-shadow: 0px 2px 3px black;
 }
 #section3 {
-    /*background-color: #585858;*/
+    background-color: #d13e1b;
 
-    background-image: url("../img/congruent_outline.png");
+/*     background-image: url("../img/congruent_outline.png"); */
     padding: 25PX;
     color: #f5f5f5;
     text-shadow: 0px 2px 3px black;
